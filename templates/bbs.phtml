@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>掲示板</title>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="サイトをキーワードで説明">
+  <meta name=desicription content="どんなサイトかを短い文章で説明">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../static/style.css" >
+
+  <title>Okinawa 掲示板</title>
+
 </head>
 <body>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<div class="csstest">テストです</div>
+    <div class="new_post">
+            <form class="contact" action="/post" method="post">
+              <h3>新規投稿</h3>
+              <h4>県内のITに興味ある人、経験者と繋がろう！</h4>
+              
+              <fieldset>
+                <input placeholder="タイトル：できるだけ具体的に記入してください" required="required" name="title" type="text" tabindex="2" >
+              </fieldset>
+              <fieldset>
+            
+              </fieldset>
+              <fieldset>
+                <textarea placeholder="内容：募集の際はfacebookのグループページやイベントページを載せることも可能です。コメントはログイン後見ることができます。" required="required" name="content" type="text" tabindex="5" ></textarea>
+              </fieldset>
+              <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">投稿</button>
+              </fieldset>
+            </form>
+
+          </div>
 
 
 
-Hello world!!!
-テスト
-3月３日
 
-    
+    <script type="text/javascript" src="../static/common.js"></script>
 </body>
-</html>
